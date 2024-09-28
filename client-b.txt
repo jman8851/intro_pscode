@@ -1,4 +1,34 @@
 # Client Task B #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+Define the warehouse layout
+warehouse = 
+    ["Aisle 1", "Aisle 2", "Aisle 3"]
+    ["Aisle 4", "Aisle 5", "Aisle 6"]
+    ["Aisle 7", "Aisle 8", "Aisle 9"]
+
+
+*/ Define the starting position of the customer
+customer_position = (0, 0) */ Starting at Aisle 1
+
+*/ Ways to move the customer
+   move Customer (direction):
+    if direction == "north":
+        if customer_position[0] > 0:
+            customer_position[0] -= 1
+     direction == "south":
+        if customer_position[0] < (warehouse) - 1:
+            customer_position[0] += 1
+     direction == "east":
+        if customer_position[1] < (warehouse[0]) - 1:
+            customer_position[1] + 1
+     direction == "west":
+        if customer_position[1] > 0:
+            customer_position[1] - 1
+
+ Function to find the location
+function findLocation(target_location):
+    while warehouse[customer_position[0]][customer_position[1]] != target_aisle:
+   Logic to determine the direction to move
+   let's assume the customer always moves north or south or east or west.
 

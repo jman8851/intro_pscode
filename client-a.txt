@@ -1,4 +1,25 @@
 # Client Task A #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+START GAME
+    SET randomNumber TO RANDOM(1, 10)
+    SET attempts TO 3
+
+    WHILE attempts > 0 DO
+        PRINT "Guess the number (between 1 and 10):"
+        READ playerGuess
+
+        IF playerGuess = randomNumber THEN
+            PRINT "WOW! You guessed the number. Get outta my head"
+            BREAK
+        ELSE
+            PRINT "Incorrect guess. The odds are against you"
+            SET attempts TO attempts - 1
+
+            IF attempts > 0 THEN
+                PRINT "You have " + attempts + " attempts left."
+            ELSE
+                PRINT "Sorry, you've run out of attempts. The correct number was "randomNumber"
+END GAME
+PRINT "PLEASE RESTART. TRY YOUR LUCK AGAIN"
 

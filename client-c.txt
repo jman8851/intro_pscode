@@ -1,4 +1,9 @@
 # Client Task C #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+START
+  for number from 2 to 50 step 2 do
+    PRINT number (n)
+  END FOR
+END
 
